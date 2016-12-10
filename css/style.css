@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    background-color: #c12626;
+}
+
+.clock {
+  display: flex;
+  flex:1;
+  min-height:100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  display: flex;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  position: relative;
+  transform: translateX(-10px);
+}
+
+.hand {
+  height: 8px;
+  width: 180px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transition: all 0.7s;
+  transition-timing-function: ease-in-out;
+}
+
+.point {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 49%;
+  left: 44%;
+  z-index: 1;
+}
+.hour {
+  background-color: rgb(18, 91, 81);
+}
+
+.minute {
+  background-color: rgb(27, 130, 117);
+}
+
+.second {
+  background-color: rgb(31, 153, 138);
+  height: 2px;
+}
